@@ -18,7 +18,7 @@
 저장된 값은 사용자 로그인을 진행할 때 사용할 수 있습니다.<br>
 <br>
 <회원정보수정 화면><br>
-![image](https://github.com/hyuny20/membership/assets/97486403/d2557438-0e37-4d04-8b03-6f246782df9e)
+![image](https://github.com/hyuny20/membership/assets/97486403/3e07ca87-bb9b-401f-a077-266c428d0911)
 
 사용자 로그인을 성공하고 회원정보수정 버튼을 실행하면 보이는 화면입니다.<br>
 로그인을 진행할때 가져온 정보를 통해 현재 들어가 있는 해당 정보를 확인할 수 있습니다.<br>
