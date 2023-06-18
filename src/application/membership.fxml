@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MembershipController">
+   <top>
+      <AnchorPane prefHeight="78.0" prefWidth="600.0" style="-fx-background-color: #ccd3ff;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="99.0" fitWidth="94.0" layoutX="253.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sungil-membership.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="306.0" prefWidth="719.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="62.0" layoutY="30.0" text="이름" />
+            <TextField fx:id="usernameTextField" layoutX="119.0" layoutY="26.0" prefHeight="23.0" prefWidth="370.0" />
+            <Label layoutX="58.0" layoutY="60.0" text="아이디" />
+            <TextField fx:id="useridTextField" editable="false" layoutX="119.0" layoutY="56.0" prefHeight="23.0" prefWidth="370.0" />
+            <Label layoutX="62.0" layoutY="89.0" text="암호" />
+            <Label layoutX="48.0" layoutY="119.0" text="암호 확인" />
+            <Label layoutX="120.0" layoutY="146.0" text="학년" />
+            <TextField fx:id="hakTextField" layoutX="153.0" layoutY="142.0" prefHeight="23.0" prefWidth="61.0" />
+            <Label layoutX="260.0" layoutY="146.0" text="반" />
+            <TextField fx:id="banTextField" layoutX="282.0" layoutY="142.0" prefHeight="23.0" prefWidth="61.0" />
+            <Label layoutX="394.0" layoutY="146.0" text="번호" />
+            <TextField fx:id="bunTextField" layoutX="428.0" layoutY="142.0" prefHeight="23.0" prefWidth="61.0" />
+            <Button fx:id="updateButton" layoutX="494.0" layoutY="26.0" mnemonicParsing="false" onAction="#updateButtonOnAction" prefHeight="69.0" prefWidth="76.0" style="-fx-background-color: #255;" text="수정" textFill="WHITE" />
+            <Button fx:id="deleteButton" layoutX="494.0" layoutY="98.0" mnemonicParsing="false" onAction="#deleteButtonOnAction" prefHeight="69.0" prefWidth="76.0" style="-fx-background-color: #255;" text="삭제" textFill="WHITE" />
+            <Button fx:id="readlistButton" alignment="CENTER" layoutX="494.0" layoutY="170.0" mnemonicParsing="false" onAction="#readlistButtonOnAction" prefHeight="109.0" prefWidth="76.0" style="-fx-background-color: #255;" text="리스트&#10;읽기" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="closeButton" layoutX="37.0" layoutY="281.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="23.0" prefWidth="535.0" style="-fx-background-color: #255;" text="창닫기" textFill="WHITE" />
+            <TableView fx:id="membershipTableView" layoutX="37.0" layoutY="170.0" onMouseClicked="#membershipTableViewonAction" prefHeight="110.0" prefWidth="452.0">
+              <columns>
+                <TableColumn fx:id="userNameTableColumn" prefWidth="75.0" text="이름" />
+                <TableColumn fx:id="userIdTableColumn" prefWidth="75.0" text="아이디" />
+                  <TableColumn fx:id="userPasswordTableColumn" prefWidth="75.0" text="암호" />
+                  <TableColumn fx:id="userHakTableColumn" prefWidth="75.0" text="학년" />
+                  <TableColumn fx:id="userBanTableColumn" prefWidth="75.0" text="반" />
+                  <TableColumn fx:id="userBunTableColumn" prefWidth="75.0" text="번호" />
+              </columns>
+            </TableView>
+            <Label fx:id="membershipMessageLabel" alignment="CENTER" layoutX="34.0" layoutY="7.0" prefHeight="15.0" prefWidth="535.0" textFill="RED" />
+            <PasswordField fx:id="password1PasswordField" layoutX="119.0" layoutY="85.0" prefHeight="23.0" prefWidth="370.0" />
+            <PasswordField fx:id="password2PasswordField" layoutX="119.0" layoutY="115.0" prefHeight="23.0" prefWidth="370.0" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

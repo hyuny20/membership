@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ModificationController">
+   <top>
+      <AnchorPane prefHeight="78.0" prefWidth="600.0" style="-fx-background-color: #ccd3ff;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="99.0" fitWidth="94.0" layoutX="253.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sungil-modification.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="306.0" prefWidth="719.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="83.0" layoutY="45.0" text="이름" />
+            <TextField fx:id="usernameTextField" layoutX="141.0" layoutY="41.0" prefHeight="23.0" prefWidth="400.0" />
+            <Label layoutX="79.0" layoutY="75.0" text="아이디" />
+            <TextField fx:id="useridTextField" editable="false" layoutX="141.0" layoutY="71.0" prefHeight="23.0" prefWidth="400.0" />
+            <Label layoutX="83.0" layoutY="104.0" text="암호" />
+            <PasswordField fx:id="password1PasswordField" layoutX="141.0" layoutY="100.0" prefHeight="23.0" prefWidth="400.0" />
+            <Label layoutX="69.0" layoutY="134.0" text="암호 확인" />
+            <PasswordField fx:id="password2PasswordField" layoutX="139.0" layoutY="130.0" prefHeight="23.0" prefWidth="400.0" />
+            <Label layoutX="108.0" layoutY="169.0" text="학년" />
+            <TextField fx:id="hakTextField" layoutX="141.0" layoutY="165.0" prefHeight="23.0" prefWidth="61.0" />
+            <Label layoutX="256.0" layoutY="169.0" text="반" />
+            <TextField fx:id="banTextField" layoutX="278.0" layoutY="165.0" prefHeight="23.0" prefWidth="61.0" />
+            <Label layoutX="391.0" layoutY="169.0" text="번호" />
+            <TextField fx:id="bunTextField" layoutX="425.0" layoutY="165.0" prefHeight="23.0" prefWidth="61.0" />
+            <Button fx:id="modifyButton" layoutX="56.0" layoutY="209.0" mnemonicParsing="false" onAction="#modifyButtonOnAction" prefHeight="66.0" prefWidth="259.0" style="-fx-background-color: #255;" text="회원 정보 수정하기" textFill="WHITE" />
+            <Button fx:id="resetButton" layoutX="319.0" layoutY="209.0" mnemonicParsing="false" onAction="#resetButtonOnAction" prefHeight="66.0" prefWidth="143.0" style="-fx-background-color: #255;" text="초기화 하기" textFill="WHITE" />
+            <Button fx:id="closeButton" layoutX="466.0" layoutY="209.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="66.0" prefWidth="73.0" style="-fx-background-color: #255;" text="창닫기" textFill="WHITE" />
+            <Label fx:id="modifyMessageLabel" alignment="CENTER" layoutX="62.0" layoutY="14.0" prefHeight="15.0" prefWidth="477.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
