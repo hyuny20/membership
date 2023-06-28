@@ -3,7 +3,7 @@
 개발 프로그램으로는 Eclipse, SceneBuilder DB를 이용하여 작성하였으며, 주로 사용한 개발 언어는 JavaFx입니다.
 
 <br>
-<메인화면><br>
+<메인 화면><br>
 ![image](https://github.com/hyuny20/membership/assets/97486403/da454429-7204-487f-999a-aa09ed334de2)
 
 프로그램을 실행하면 보이는 처음 부분인 메인 부분 입니다.<br>
